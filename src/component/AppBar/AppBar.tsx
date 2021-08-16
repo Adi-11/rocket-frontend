@@ -68,7 +68,7 @@ export const AppBarHeader: React.FC<AppBarProps> = ({}) => {
           </Typography>
           <div className={classes.search}>
             <a className={classes.title} href={getBrowser()} target="_blank">
-              Get the Chrome Extension
+              Get the {getBrowser() ? "Chrome" : "FireFox"} Extension
             </a>
           </div>
         </Toolbar>
